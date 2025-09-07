@@ -145,10 +145,10 @@ Copy code
 body {
     font-family: 'Segoe UI', sans-serif;
     text-align: center;
-    background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+    background: linear-gradient(135deg, FFDEE9, B5FFFC);
 }
 .form-box {
-    background: #fff;
+    background: fff;
     padding: 50px;
     margin: 40px auto;
     width: 90%;
@@ -158,7 +158,7 @@ body {
 }
 button {
     padding: 16px;
-    background: #27ae60;
+    background: 27ae60;
     color: white;
     border-radius: 12px;
     cursor: pointer;
