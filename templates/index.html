@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart House Price Prediction Model</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* full screen height */
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #222;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-box {
+            background: #fff;
+            padding: 70px;
+            width: 95%;
+            max-width: 1500px; /* बड़ा किया */
+            border-radius: 25px;
+            box-shadow: 0px 12px 35px rgba(0,0,0,0.35);
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* input box थोड़ा और बड़ा */
+            gap: 30px 50px;
+        }
+        label {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .emoji {
+            margin-right: 8px;
+        }
+        input, select {
+            width: 100%;
+            padding: 20px;  /* बड़ा किया */
+            border-radius: 14px;
+            border: 1px solid #ccc;
+            font-size: 20px; /* text बड़ा */
+        }
+        button {
+            margin-top: 40px;
+            padding: 22px;
+            background: #27ae60;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            border: none;
+            border-radius: 16px;
+            cursor: pointer;
+            width: 100%;
+            box-shadow: 0px 6px 18px rgba(0,0,0,0.25);
+        }
+        button:hover {
+            background: #219150;
+        }
+        .footer {
+            margin-top: 35px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h1>🏡 Smart House Price Prediction Model</h1>
+        <form action="/predict" method="post">
+            <div class="form-grid">
+                <!-- Old + New Fields (same as before) -->
+                <div>
+                    <label><span class="emoji">📐</span> Area (sq.ft)</label>
+                    <input type="number" name="area" placeholder="Enter area in sq.ft" required>
+                </div>
+
+                <div>
+                    <label><span class="emoji">🛏️</span> Number of Rooms</label>
+                    <input type="number" name="rooms" placeholder="Enter number of rooms" required>
+                </div>
+
+                <div>
+                    <label><span class="emoji">📍</span> City</label>
+                    <select name="city" required>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label><span class="emoji">🏠</span> House Type</label>
+                    <select name="house_type" required>
+                        <option value="Apartment">Apartment</option>
+                        <option value="Villa">Villa</option>
+                        <option value="Independent House">Independent House</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label><span class="emoji">🛁</span> Bathrooms</label>
+                    <input type="number" name="bathrooms" placeholder="Enter number of bathrooms" required>
+                </div>
+
+                <div>
+                    <label><span class="emoji">🚗</span> Parking</label>
+                    <select name="parking" required>
+                        <option value="No Parking">No Parking</option>
+                        <option value="1 Parking">1 Parking</option>
+                        <option value="2 Parking">2 Parking</option>
+                    </select>
+                </div>
+
+                <!-- Extra Fields -->
+                <div>
+                    <label><span class="emoji">🏢</span> Floor Number</label>
+                    <input type="number" name="floor_number" placeholder="Enter floor number">
+                </div>
+
+                <div>
+                    <label><span class="emoji">🏬</span> Total Floors in Building</label>
+                    <input type="number" name="total_floors" placeholder="Enter total floors in building">
+                </div>
+
+                <div>
+                    <label><span class="emoji">📅</span> Year of Construction</label>
+                    <input type="number" name="year_built" placeholder="Enter year of construction">
+                </div>
+
+                <div>
+                    <label><span class="emoji">🛋️</span> Furnishing Status</label>
+                    <select name="furnishing">
+                        <option value="Unfurnished">Unfurnished</option>
+                        <option value="Semi-Furnished">Semi-Furnished</option>
+                        <option value="Fully-Furnished">Fully Furnished</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label><span class="emoji">🧭</span> Facing Direction</label>
+                    <select name="facing">
+                        <option value="North">North</option>
+                        <option value="South">South</option>
+                        <option value="East">East</option>
+                        <option value="West">West</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label><span class="emoji">🏫</span> Nearby Amenities</label>
+                    <input type="text" name="amenities" placeholder="E.g. School, Metro, Market">
+                </div>
+            </div>
+
+            <button type="submit">🔎 Predict Price</button>
+        </form>
+        <div class="footer">✨ Build by Atharva Chavhan ✨</div>
+    </div>
+</body>
+</html>
+

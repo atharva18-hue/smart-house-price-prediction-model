@@ -1,0 +1,32 @@
+{
+  "features": [
+    "INTERCEPT",
+    "city_Bengaluru",
+    "city_Chennai",
+    "city_Delhi",
+    "city_Hyderabad",
+    "city_Mumbai",
+    "city_Pune",
+    "bedrooms",
+    "bathrooms",
+    "sqft",
+    "age",
+    "floor"
+  ],
+  "coefficients": [
+    -10285536.006157668,
+    9263372.688241236,
+    4255761.848033968,
+    14824487.239536751,
+    5146255.583218538,
+    20571012.092062347,
+    3360964.763521868,
+    137415.80647340335,
+    39979.958288075075,
+    12550.670497323996,
+    -2004.4374431604488,
+    9477.244768510549
+  ],
+  "description": "Linear regression model saved as coefficients. Prediction = intercept + sum(coef_i * feature_i)",
+  "version": "1.0"
+}

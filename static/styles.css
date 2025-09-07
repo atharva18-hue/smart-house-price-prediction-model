@@ -1,0 +1,29 @@
+:root{
+  --bg: linear-gradient(135deg,#0f172a,#0f3b6b);
+  --card:#0f172a;
+  --accent:#60a5fa;
+  --muted:#94a3b8;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto;color:#e6eef8;background:var(--bg);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px}
+.page-center{display:flex;gap:22px;align-items:flex-start;max-width:1100px;width:100%}
+.card{background:rgba(255,255,255,0.03);padding:26px;border-radius:16px;box-shadow:0 8px 40px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.04);flex:1}
+.form-card{flex:1.2;min-width:380px}
+.info-card{flex:0.8;min-width:260px}
+h1{margin:0 0 8px;font-size:22px}
+.lead{color:var(--muted);margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.col{display:flex;flex-direction:column}
+.full{grid-column:1/-1}
+label{font-weight:600;color:#dbeafe;margin-bottom:6px}
+input,select{padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);color:inherit;outline:none}
+.btn-primary{width:100%;padding:12px;border-radius:12px;border:none;background:linear-gradient(90deg,var(--accent),#7dd3fc);color:#042a49;font-weight:700;cursor:pointer;box-shadow:0 8px 18px rgba(96,165,250,0.12)}
+.btn-primary:hover{transform:translateY(-2px)}
+.info-card ul{margin:8px 0 12px;padding-left:18px;color:var(--muted)}
+.result-card{text-align:center;max-width:700px}
+.price{font-size:20px;margin:18px 0;color:#b7f5d0}
+.price span{font-weight:800;font-size:28px;color:#fff}
+.details{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;text-align:left;padding:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:10px}
+.actions{margin-top:16px}
+.btn-secondary{display:inline-block;padding:10px 16px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.08);color:#fff;text-decoration:none}
+@media(max-width:900px){.page-center{flex-direction:column}.grid{grid-template-columns:1fr}}
