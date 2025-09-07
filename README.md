@@ -148,7 +148,7 @@ A Try Next Prediction” button allows users to easily input new data without re
 - templates/index.html: Input form page for users to enter property details.
 - templates/result.html: Page showing predicted house price.
 - static/styles.css: Custom CSS styles for the web app.
-- 
+  
 ----------------------------------------------------------------------------------------------------------------------------------
 
  ## Contributing
