@@ -23,21 +23,21 @@ Designed with a clean, responsive, and user-friendly interface for smooth intera
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-## ⚙️ Installation
-
+## ⚙️ How to run
 1. Clone the repository:
    git clone https://github.com/atharva18-hue/smart-house-price-prediction-model.git
 
-Navigate into the project folder:
-cd smart-house-price-prediction-model
+2. Navigate into the project folder:
+   cd smart-house-price-prediction-model
 
-Install dependencies:
-pip install -r requirements.txt
-Run the Flask app:
+3. Install dependencies:
+   pip install -r requirements.txt
 
-python app.py
-Open the browser at:
-http://127.0.0.1:5000
+4. Run the Flask app:
+   python app.py
+
+5. Open the browser at:
+   http://127.0.0.1:5000
 
 -----------------------------------------------------------------------------------------------------------------------------
 
@@ -139,7 +139,17 @@ Users can quickly see the output and compare different property inputs by return
 The layout is responsive and visually consistent with the main form page, ensuring smooth user interaction.
 A Try Next Prediction” button allows users to easily input new data without refreshing the browser.
 
--------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+
+## Code overview
+- app.py: Main Flask application handling routes, form submission, and prediction display.
+- train.py: Script to train the ML model using dataset from data/housing.csv.
+- model/: Folder containing trained model (model.pkl / model.json).
+- templates/index.html: Input form page for users to enter property details.
+- templates/result.html: Page showing predicted house price.
+- static/styles.css: Custom CSS styles for the web app.
+- 
+----------------------------------------------------------------------------------------------------------------------------------
 
  ## Contributing
 Contributions, issues, and feature requests are welcome!
