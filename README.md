@@ -1,6 +1,6 @@
 # 🏡 Smart House Price Prediction Model
 
-A modern Flask + Machine Learning web application** that predicts house prices accurately based on multiple property features such as area, rooms, city, house type, bathrooms, parking, furnishing, floor number, total floors, year built, facing direction, and nearby amenities.  
+A modern Flask + Machine Learning web application that predicts house prices accurately based on multiple property features such as area, rooms, city, house type, bathrooms, parking, furnishing, floor number, total floors, year built, facing direction, and nearby amenities.  
 Designed with a clean, responsive, and user-friendly interface for smooth interaction and easy visualization.
 
 -----------------------------------------------------------------------------------------------------------------------------
