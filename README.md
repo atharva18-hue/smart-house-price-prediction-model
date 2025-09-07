@@ -133,10 +133,12 @@ Copy code
 -----------------------------------------------------------------------------------------------------------------------------
 
 ## HTML Result Page (templates/result.html)
+This page displays the predicted house price after the user submits the input form.
+It shows a clean, highlighted result box with the estimated price in a readable format.
+Users can quickly see the output and compare different property inputs by returning to the input page.
+The layout is responsive and visually consistent with the main form page, ensuring smooth user interaction.
+A Try Next Prediction” button allows users to easily input new data without refreshing the browser.
 
-<h2>✅ Estimated Property Value:</h2>
-<div class="price">{{ prediction_text }}</div>
-<a href="/">🔄 Try Next Prediction</a>
 -------------------------------------------------------------------------------------------------------------------------------
 
  ## Contributing
