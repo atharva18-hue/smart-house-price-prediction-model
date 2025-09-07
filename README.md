@@ -41,7 +41,7 @@ http://127.0.0.1:5000
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-📂 Project Structure
+## Project Structure
 
 smart-house-price-prediction-model/
 │── app.py                 # Flask application
@@ -59,7 +59,7 @@ smart-house-price-prediction-model/
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-1. Flask Application (app.py)
+## Flask Application (app.py)
 python
 from flask import Flask, render_template, request
 import pickle
@@ -84,7 +84,7 @@ if __name__ == "__main__":
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-2. Model Training (train.py)
+## Model Training (train.py)
 python
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -111,7 +111,7 @@ with open('model/model.pkl', 'wb') as f:
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-3. HTML Input Form (templates/index.html)
+## HTML Input Form (templates/index.html)
 html
 Copy code
 <form action="/predict" method="post">
@@ -132,46 +132,20 @@ Copy code
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-4. HTML Result Page (templates/result.html)
+## HTML Result Page (templates/result.html)
 
 <h2>✅ Estimated Property Value:</h2>
 <div class="price">{{ prediction_text }}</div>
 <a href="/">🔄 Try Next Prediction</a>
+-------------------------------------------------------------------------------------------------------------------------------
 
------------------------------------------------------------------------------------------------------------------------------
-
-5. CSS Snippet (static/styles.css)
-
-body {
-    font-family: 'Segoe UI', sans-serif;
-    text-align: center;
-    background: linear-gradient(135deg, FFDEE9, B5FFFC);
-}
-.form-box {
-    background: fff;
-    padding: 50px;
-    margin: 40px auto;
-    width: 90%;
-    max-width: 1200px;
-    border-radius: 20px;
-    box-shadow: 0px 8px 25px rgba(0,0,0,0.3);
-}
-button {
-    padding: 16px;
-    background: 27ae60;
-    color: white;
-    border-radius: 12px;
-    cursor: pointer;
-}
------------------------------------------------------------------------------------------------------------------------------
-
-🤝 Contributing
+ ## Contributing
 Contributions, issues, and feature requests are welcome!
 Feel free to fork this repo and submit a PR.
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-👨‍💻 Author
+## Author
 @Atharva Chavhan
 
 -----------------------------------------------------------------------------------------------------------------------------
