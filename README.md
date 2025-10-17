@@ -1,6 +1,6 @@
 
 
-# 🏡 Smart House Price Prediction Model
+#  Smart House Price Prediction Model
 
 ## Overview
 
@@ -16,25 +16,25 @@ https://github.com/user-attachments/assets/111c6b31-bf4e-4eba-b611-ce0625b1ee23
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-## 🚀 Features
-- Predicts property price instantly using a trained ML model 📊  
-- User-friendly web interface built with **Flask, HTML, and CSS** 🌐  
+##  Features
+- Predicts property price instantly using a trained ML model 
+- User-friendly web interface built with **Flask, HTML, and CSS**  
 - Supports multiple property details for accurate predictions  
-- Clean and responsive UI for better visualization 📱  
-- Easy to run locally and understand the prediction flow 💡  
+- Clean and responsive UI for better visualization  
+- Easy to run locally and understand the prediction flow  
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-## 🛠 Tech Stack
-- **Python** 🐍  
-- **Flask** 🌶  
-- **Scikit-learn / Pandas / NumPy** 📈  
-- **HTML5 & CSS3** 🎨  
-- **Git & GitHub** 🔗  
+##  Tech Stack
+- **Python**   
+- **Flask** 
+- **Scikit-learn / Pandas / NumPy** 
+- **HTML5 & CSS3** 
+- **Git & GitHub**   
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-## ⚙️ How to run
+##  How to run
 1. Clone the repository:
    git clone https://github.com/atharva18-hue/smart-house-price-prediction-model.git
 
